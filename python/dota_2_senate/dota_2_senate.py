@@ -22,3 +22,22 @@ class Solution:
             else:
                 dire.append(dire_idx+n)
         return "Radiant" if radiant else "Dire"
+    
+    # approach from neetcode
+    def predictPartyVictory2(self,senate):
+        senate = list(senate)
+        R,D=deque(),deque()
+        for i,s in enumerate(senate):
+            if s=="R":
+                R.append(i)
+            else:
+                D.append(i)
+        while R and D:
+            rTurn = R.popleft()
+            dTurn =D.popleft()
+
+            if rTurn < dTurn:
+                R.append(rTurn+len(senate))
+            else:
+                D.append(dTurn+len(senate))
+        return "Radiant" if R else "Dire"
