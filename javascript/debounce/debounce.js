@@ -18,3 +18,9 @@ var debounce = function(fn, t) {
  * log('Hello'); // cancelled
  * log('Hello'); // Logged at t=100ms
  */
+
+
+/* Applications include when dealing with suggestion on search input
+   Form submission when dealing with a payment submission
+
+*/
