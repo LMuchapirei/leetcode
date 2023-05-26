@@ -54,7 +54,6 @@
 function objDiff(o1, o2) {
     // Only care about common keys
 
-
     // if both primitive and diff, then diff
 
     // If one is obj and other isn't, then diff
@@ -82,8 +81,6 @@ function objDiff(o1, o2) {
                 }
             }
         }
-
-
     function isObject(obj){
         return typeof obj === "object" && obj !==null;
     }
