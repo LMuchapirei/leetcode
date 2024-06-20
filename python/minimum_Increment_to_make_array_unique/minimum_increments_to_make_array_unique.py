@@ -4,6 +4,7 @@ from typing import List
 
 class Solution:
     def minIncrementForUnique(self, nums: List[int]) -> int:
+        # was a very long and inefficient solution that passed only a quarter of the test cases
         # minValue = min(nums)
         # maxValue = max(nums)
         # print(f"This is the min val {minValue} and max Value {maxValue}")
